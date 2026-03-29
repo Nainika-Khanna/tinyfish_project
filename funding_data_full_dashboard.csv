@@ -1,0 +1,121 @@
+startup_name,funding_amount,round,date,investors,short_description,funding_amount_numeric
+Neo AI 1,$4M,Series C,"Feb 13, 2026",Investor 32,Neo AI 1 raises $4M to expand its business.,4.0
+Alpha Ventures 2,$71M,None,"Oct 05, 2023",,Alpha Ventures 2 raises $71M to expand its business.,71.0
+Star Ventures 3,$28M,Fund I,"Dec 20, 2023",Investor 20,Star Ventures 3 raises $28M to expand its business.,28.0
+Beta Systems 4,$32M,Fund II,"Mar 11, 2025",,Beta Systems 4 raises $32M to expand its business.,32.0
+Hyper Works 5,$55M,Seed,"Apr 16, 2023",,Hyper Works 5 raises $55M to expand its business.,55.0
+Star Solutions 6,$106M,Fund I,"Sep 01, 2023",Investor 28,Star Solutions 6 raises $106M to expand its business.,106.0
+Alpha Ventures 7,$101M,None,"Mar 24, 2025",,Alpha Ventures 7 raises $101M to expand its business.,101.0
+Star Systems 8,$32M,None,"Oct 20, 2025",,Star Systems 8 raises $32M to expand its business.,32.0
+Rocket AI 9,$107M,Fund I,"Mar 05, 2024",Investor 22,Rocket AI 9 raises $107M to expand its business.,107.0
+Green Partners 10,$55M,Fund I,"Sep 03, 2023",,Green Partners 10 raises $55M to expand its business.,55.0
+Smart Works 11,$122M,Series C,"Dec 26, 2024",,Smart Works 11 raises $122M to expand its business.,122.0
+Neo Works 12,$141M,None,"Jan 06, 2025",Investor 44,Neo Works 12 raises $141M to expand its business.,141.0
+Alpha Dynamics 13,$100M,Series A,"Jan 30, 2024",,Alpha Dynamics 13 raises $100M to expand its business.,100.0
+Rocket AI 14,$15M,Series A,"Jul 01, 2023",,Rocket AI 14 raises $15M to expand its business.,15.0
+Beta Works 15,$123M,None,"Jan 16, 2024",Investor 34,Beta Works 15 raises $123M to expand its business.,123.0
+Beta Solutions 16,$34M,Series B,"Sep 24, 2025",Investor 20,Beta Solutions 16 raises $34M to expand its business.,34.0
+Tech Partners 17,$85M,Fund II,"Jan 12, 2026",Investor 46,Tech Partners 17 raises $85M to expand its business.,85.0
+Beta Solutions 18,$91M,Seed,"Nov 25, 2025",,Beta Solutions 18 raises $91M to expand its business.,91.0
+Hyper Ventures 19,$145M,Series B,"Dec 10, 2024",,Hyper Ventures 19 raises $145M to expand its business.,145.0
+Neo Works 20,$92M,Series B,"Jun 21, 2024",,Neo Works 20 raises $92M to expand its business.,92.0
+Hyper Labs 21,$16M,Series A,"Jun 30, 2025",Investor 48,Hyper Labs 21 raises $16M to expand its business.,16.0
+Neo Labs 22,$65M,Fund I,"May 26, 2025",,Neo Labs 22 raises $65M to expand its business.,65.0
+Green Dynamics 23,$106M,Series A,"Sep 22, 2025",Investor 25,Green Dynamics 23 raises $106M to expand its business.,106.0
+Alpha AI 24,$114M,Fund II,"Oct 30, 2024",,Alpha AI 24 raises $114M to expand its business.,114.0
+Star Partners 25,$14M,Series B,"Aug 29, 2025",Investor 22,Star Partners 25 raises $14M to expand its business.,14.0
+Star Works 26,$148M,Fund II,"May 22, 2025",,Star Works 26 raises $148M to expand its business.,148.0
+Rocket Works 27,$74M,Series A,"Oct 20, 2023",Investor 9,Rocket Works 27 raises $74M to expand its business.,74.0
+Star Dynamics 28,$20M,Fund I,"Apr 30, 2023",Investor 28,Star Dynamics 28 raises $20M to expand its business.,20.0
+Neo Ventures 29,$88M,Series A,"Aug 26, 2024",Investor 8,Neo Ventures 29 raises $88M to expand its business.,88.0
+Neo Labs 30,$45M,None,"Apr 22, 2023",Investor 44,Neo Labs 30 raises $45M to expand its business.,45.0
+Star Dynamics 31,$2M,Series A,"Aug 03, 2024",,Star Dynamics 31 raises $2M to expand its business.,2.0
+Quantum Works 32,$110M,None,"Apr 20, 2025",,Quantum Works 32 raises $110M to expand its business.,110.0
+Star AI 33,$75M,Fund II,"Aug 05, 2024",Investor 5,Star AI 33 raises $75M to expand its business.,75.0
+Neo AI 34,$110M,Seed,"Apr 04, 2025",Investor 15,Neo AI 34 raises $110M to expand its business.,110.0
+Beta AI 35,$112M,Fund I,"Dec 24, 2024",,Beta AI 35 raises $112M to expand its business.,112.0
+Beta AI 36,$21M,Fund II,"Feb 19, 2024",Investor 17,Beta AI 36 raises $21M to expand its business.,21.0
+Neo AI 37,$115M,Fund I,"Feb 14, 2026",Investor 3,Neo AI 37 raises $115M to expand its business.,115.0
+Beta Dynamics 38,$71M,Series B,"Nov 11, 2024",,Beta Dynamics 38 raises $71M to expand its business.,71.0
+Alpha Works 39,$21M,Fund I,"Oct 08, 2023",,Alpha Works 39 raises $21M to expand its business.,21.0
+Rocket Works 40,$24M,Series B,"Dec 31, 2023",,Rocket Works 40 raises $24M to expand its business.,24.0
+Tech Labs 41,$57M,Series B,"Mar 01, 2024",Investor 43,Tech Labs 41 raises $57M to expand its business.,57.0
+Beta Partners 42,$72M,Seed,"Sep 05, 2023",,Beta Partners 42 raises $72M to expand its business.,72.0
+Neo Labs 43,$85M,Series C,"Jun 23, 2023",,Neo Labs 43 raises $85M to expand its business.,85.0
+Alpha Systems 44,$22M,Seed,"May 04, 2025",,Alpha Systems 44 raises $22M to expand its business.,22.0
+Tech AI 45,$147M,Seed,"Jul 21, 2023",,Tech AI 45 raises $147M to expand its business.,147.0
+Smart Labs 46,$24M,None,"Sep 21, 2023",,Smart Labs 46 raises $24M to expand its business.,24.0
+Alpha Labs 47,$45M,None,"May 16, 2023",Investor 47,Alpha Labs 47 raises $45M to expand its business.,45.0
+Neo Partners 48,$124M,Series C,"Dec 11, 2025",,Neo Partners 48 raises $124M to expand its business.,124.0
+Quantum AI 49,$76M,Fund I,"Dec 11, 2024",Investor 48,Quantum AI 49 raises $76M to expand its business.,76.0
+Rocket Labs 50,$20M,Fund I,"Oct 10, 2025",,Rocket Labs 50 raises $20M to expand its business.,20.0
+Smart Partners 51,$39M,Series A,"May 07, 2025",,Smart Partners 51 raises $39M to expand its business.,39.0
+Hyper Works 52,$7M,Seed,"Jun 02, 2025",Investor 13,Hyper Works 52 raises $7M to expand its business.,7.0
+Neo Systems 53,$98M,Seed,"Nov 29, 2025",,Neo Systems 53 raises $98M to expand its business.,98.0
+Quantum Solutions 54,$84M,Fund I,"Jul 24, 2025",Investor 25,Quantum Solutions 54 raises $84M to expand its business.,84.0
+Rocket Works 55,$3M,Series C,"Mar 11, 2024",Investor 2,Rocket Works 55 raises $3M to expand its business.,3.0
+Neo Works 56,$89M,Series C,"Jun 08, 2023",,Neo Works 56 raises $89M to expand its business.,89.0
+Smart Solutions 57,$133M,None,"Oct 18, 2024",,Smart Solutions 57 raises $133M to expand its business.,133.0
+Green Solutions 58,$3M,Series A,"Nov 26, 2023",,Green Solutions 58 raises $3M to expand its business.,3.0
+Star Partners 59,$49M,Seed,"Oct 17, 2024",,Star Partners 59 raises $49M to expand its business.,49.0
+Quantum Works 60,$13M,Series A,"Jun 12, 2023",Investor 1,Quantum Works 60 raises $13M to expand its business.,13.0
+Star Ventures 61,$98M,Series C,"Sep 03, 2023",,Star Ventures 61 raises $98M to expand its business.,98.0
+Alpha Systems 62,$75M,Fund I,"Jul 28, 2023",,Alpha Systems 62 raises $75M to expand its business.,75.0
+Star Dynamics 63,$18M,Series C,"Apr 18, 2023",Investor 29,Star Dynamics 63 raises $18M to expand its business.,18.0
+Green Works 64,$81M,Fund I,"Jun 30, 2024",,Green Works 64 raises $81M to expand its business.,81.0
+Smart Systems 65,$26M,Seed,"Feb 26, 2024",Investor 11,Smart Systems 65 raises $26M to expand its business.,26.0
+Alpha Works 66,$59M,Series A,"May 23, 2023",,Alpha Works 66 raises $59M to expand its business.,59.0
+Green Systems 67,$80M,None,"Oct 06, 2023",Investor 3,Green Systems 67 raises $80M to expand its business.,80.0
+Tech Partners 68,$35M,None,"Nov 03, 2025",Investor 26,Tech Partners 68 raises $35M to expand its business.,35.0
+Smart Partners 69,$124M,Series B,"Dec 18, 2023",,Smart Partners 69 raises $124M to expand its business.,124.0
+Star Systems 70,$13M,Series A,"Sep 05, 2025",,Star Systems 70 raises $13M to expand its business.,13.0
+Hyper Ventures 71,$4M,Seed,"Jul 03, 2023",,Hyper Ventures 71 raises $4M to expand its business.,4.0
+Green Works 72,$41M,None,"May 29, 2024",,Green Works 72 raises $41M to expand its business.,41.0
+Hyper Solutions 73,$45M,Fund II,"Jan 24, 2024",,Hyper Solutions 73 raises $45M to expand its business.,45.0
+Rocket Ventures 74,$22M,Seed,"Aug 13, 2025",,Rocket Ventures 74 raises $22M to expand its business.,22.0
+Smart Works 75,$98M,None,"Oct 19, 2024",,Smart Works 75 raises $98M to expand its business.,98.0
+Neo Ventures 76,$150M,Series A,"Jan 20, 2024",Investor 40,Neo Ventures 76 raises $150M to expand its business.,150.0
+Smart Works 77,$49M,Series C,"Mar 28, 2025",,Smart Works 77 raises $49M to expand its business.,49.0
+Alpha Dynamics 78,$6M,Fund II,"Nov 14, 2023",Investor 20,Alpha Dynamics 78 raises $6M to expand its business.,6.0
+Hyper Ventures 79,$43M,Series B,"Nov 01, 2023",Investor 36,Hyper Ventures 79 raises $43M to expand its business.,43.0
+Neo Partners 80,$86M,Series A,"May 14, 2024",Investor 37,Neo Partners 80 raises $86M to expand its business.,86.0
+Neo Partners 81,$34M,Series B,"Jun 04, 2023",,Neo Partners 81 raises $34M to expand its business.,34.0
+Alpha Labs 82,$36M,None,"Sep 01, 2024",,Alpha Labs 82 raises $36M to expand its business.,36.0
+Hyper Ventures 83,$85M,Fund I,"Apr 16, 2024",,Hyper Ventures 83 raises $85M to expand its business.,85.0
+Green Labs 84,$104M,Seed,"Apr 18, 2024",,Green Labs 84 raises $104M to expand its business.,104.0
+Smart Dynamics 85,$123M,Series A,"Oct 14, 2025",,Smart Dynamics 85 raises $123M to expand its business.,123.0
+Rocket Labs 86,$119M,Seed,"Jun 30, 2023",Investor 43,Rocket Labs 86 raises $119M to expand its business.,119.0
+Star AI 87,$86M,Fund II,"Jul 27, 2025",Investor 29,Star AI 87 raises $86M to expand its business.,86.0
+Hyper Ventures 88,$52M,Fund II,"Jan 17, 2026",,Hyper Ventures 88 raises $52M to expand its business.,52.0
+Hyper Labs 89,$150M,Series A,"Jul 13, 2024",Investor 36,Hyper Labs 89 raises $150M to expand its business.,150.0
+Smart Ventures 90,$20M,Series B,"Feb 15, 2025",,Smart Ventures 90 raises $20M to expand its business.,20.0
+Neo Partners 91,$73M,Seed,"Jun 05, 2023",,Neo Partners 91 raises $73M to expand its business.,73.0
+Beta AI 92,$76M,Seed,"Dec 30, 2023",Investor 19,Beta AI 92 raises $76M to expand its business.,76.0
+Smart Dynamics 93,$99M,Series C,"Oct 15, 2024",Investor 18,Smart Dynamics 93 raises $99M to expand its business.,99.0
+Tech Dynamics 94,$136M,Series A,"Jun 26, 2025",,Tech Dynamics 94 raises $136M to expand its business.,136.0
+Smart Works 95,$60M,Series B,"Sep 04, 2025",Investor 47,Smart Works 95 raises $60M to expand its business.,60.0
+Rocket Systems 96,$139M,Series A,"Mar 16, 2024",Investor 34,Rocket Systems 96 raises $139M to expand its business.,139.0
+Quantum Systems 97,$48M,Series C,"Dec 22, 2023",Investor 44,Quantum Systems 97 raises $48M to expand its business.,48.0
+Tech Dynamics 98,$65M,Fund II,"Aug 15, 2025",Investor 23,Tech Dynamics 98 raises $65M to expand its business.,65.0
+Quantum AI 99,$28M,Seed,"Apr 17, 2024",,Quantum AI 99 raises $28M to expand its business.,28.0
+Green Dynamics 100,$14M,Series C,"Sep 25, 2023",,Green Dynamics 100 raises $14M to expand its business.,14.0
+Neo Dynamics 101,$141M,Series C,"May 18, 2023",Investor 45,Neo Dynamics 101 raises $141M to expand its business.,141.0
+Smart Dynamics 102,$118M,Seed,"Apr 11, 2024",,Smart Dynamics 102 raises $118M to expand its business.,118.0
+Tech Ventures 103,$43M,Seed,"Feb 25, 2024",Investor 48,Tech Ventures 103 raises $43M to expand its business.,43.0
+Star Solutions 104,$90M,Series C,"Feb 08, 2025",,Star Solutions 104 raises $90M to expand its business.,90.0
+Hyper Solutions 105,$125M,Series A,"Mar 27, 2024",,Hyper Solutions 105 raises $125M to expand its business.,125.0
+Star Systems 106,$14M,Series C,"Sep 01, 2023",,Star Systems 106 raises $14M to expand its business.,14.0
+Neo Solutions 107,$3M,None,"Apr 26, 2025",Investor 47,Neo Solutions 107 raises $3M to expand its business.,3.0
+Beta Systems 108,$7M,Fund II,"Oct 26, 2023",Investor 36,Beta Systems 108 raises $7M to expand its business.,7.0
+Beta Partners 109,$76M,Series A,"Aug 08, 2023",,Beta Partners 109 raises $76M to expand its business.,76.0
+Alpha Works 110,$131M,Fund I,"Apr 22, 2025",,Alpha Works 110 raises $131M to expand its business.,131.0
+Neo Systems 111,$71M,Fund I,"Oct 02, 2023",Investor 5,Neo Systems 111 raises $71M to expand its business.,71.0
+Green Dynamics 112,$58M,Seed,"Jan 14, 2026",Investor 44,Green Dynamics 112 raises $58M to expand its business.,58.0
+Rocket Partners 113,$14M,Series A,"Jun 12, 2024",Investor 47,Rocket Partners 113 raises $14M to expand its business.,14.0
+Smart Labs 114,$29M,None,"Dec 09, 2025",,Smart Labs 114 raises $29M to expand its business.,29.0
+Beta Solutions 115,$31M,Fund I,"Mar 23, 2026",Investor 16,Beta Solutions 115 raises $31M to expand its business.,31.0
+Quantum Solutions 116,$100M,Series B,"Oct 14, 2024",Investor 12,Quantum Solutions 116 raises $100M to expand its business.,100.0
+Hyper Dynamics 117,$62M,Series A,"Jun 16, 2025",,Hyper Dynamics 117 raises $62M to expand its business.,62.0
+Rocket Ventures 118,$72M,Series C,"May 02, 2023",Investor 13,Rocket Ventures 118 raises $72M to expand its business.,72.0
+Hyper Partners 119,$84M,None,"May 02, 2023",,Hyper Partners 119 raises $84M to expand its business.,84.0
+Rocket Ventures 120,$2M,Seed,"Dec 01, 2024",Investor 40,Rocket Ventures 120 raises $2M to expand its business.,2.0
