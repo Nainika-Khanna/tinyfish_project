@@ -21,7 +21,7 @@ def load_data():
 
 df = load_data()
 
-# ---------- SIDEBAR FILTERS ----------
+# ---------- SIDEBAR ----------
 st.sidebar.header("🔎 Filters")
 
 year = st.sidebar.multiselect("Year", sorted(df["year"].dropna().unique()))
@@ -33,109 +33,122 @@ if round_type:
     df = df[df["round"].isin(round_type)]
 
 # ---------- CLASSIFICATION ----------
-def classify(row):
-    q1 = df["funding_amount_numeric"].quantile(0.25)
-    q3 = df["funding_amount_numeric"].quantile(0.75)
+q1 = df["funding_amount_numeric"].quantile(0.25)
+q3 = df["funding_amount_numeric"].quantile(0.75)
 
-    if row["funding_amount_numeric"] >= q3:
-        return "Top Performer 🚀"
-    elif row["funding_amount_numeric"] <= q1:
-        return "Low Performer ⚠️"
+def classify(x):
+    if x >= q3:
+        return "Top 🚀"
+    elif x <= q1:
+        return "Low ⚠️"
     else:
         return "Moderate"
 
-df["category"] = df.apply(classify, axis=1)
+df["category"] = df["funding_amount_numeric"].apply(classify)
 
-# ---------- METRICS ----------
-st.subheader("📊 Key Metrics")
+# ---------- KPIs ----------
+st.subheader("📊 Key Insights")
 
-col1, col2, col3 = st.columns(3)
+col1, col2, col3, col4 = st.columns(4)
 
-col1.metric("Total Startups", len(df))
-col2.metric("Total Funding ($M)", int(df["funding_amount_numeric"].sum()))
-col3.metric("Avg Funding ($M)", round(df["funding_amount_numeric"].mean(), 2))
+total_funding = df["funding_amount_numeric"].sum()
+avg_funding = df["funding_amount_numeric"].mean()
+max_funding = df["funding_amount_numeric"].max()
+min_funding = df["funding_amount_numeric"].min()
+
+col1.metric("💰 Total Funding", f"${total_funding:,.0f}M")
+col2.metric("📈 Avg Funding", f"${avg_funding:,.2f}M")
+col3.metric("🚀 Highest Funding", f"${max_funding}M")
+col4.metric("⚠️ Lowest Funding", f"${min_funding}M")
 
 # ---------- TOP FUNDING ----------
-st.subheader("📊 Top 10 Funding (Bar Chart)")
+st.subheader("📊 Top 10 Startups by Funding")
 
-top_startups = df.sort_values(by="funding_amount_numeric", ascending=False).head(10)
+top_df = df.sort_values("funding_amount_numeric", ascending=False).head(10)
 
 fig1 = px.bar(
-    top_startups,
+    top_df,
     x="startup_name",
     y="funding_amount_numeric",
-    text="funding_amount_numeric",
     color="category",
+    text=top_df["funding_amount_numeric"].apply(lambda x: f"${x}M"),
     color_discrete_map={
-        "Top Performer 🚀": "green",
-        "Moderate": "blue",
-        "Low Performer ⚠️": "red"
+        "Top 🚀": "#A8E6CF",
+        "Moderate": "#A0C4FF",
+        "Low ⚠️": "#FFADAD"
     }
 )
 
-fig1.update_traces(textposition='outside')
+fig1.update_traces(textposition="outside", textfont=dict(size=14, color="black"))
+
+fig1.update_layout(
+    xaxis_title="Startup Name",
+    yaxis_title="Funding ($M)",
+    showlegend=True
+)
+
 st.plotly_chart(fig1, use_container_width=True)
 
-# ---------- LOW FUNDING ----------
-st.subheader("📉 Lowest Funded Startups")
+# ---------- PIE ----------
+st.subheader("🥧 Funding by Round")
 
-low_startups = df.sort_values(by="funding_amount_numeric").head(10)
-st.dataframe(low_startups[["startup_name", "funding_amount", "round"]])
-
-# ---------- PIE CHART ----------
-st.subheader("🥧 Funding Distribution by Round")
-
-round_funding = df.groupby("round")["funding_amount_numeric"].sum().reset_index()
+round_df = df.groupby("round")["funding_amount_numeric"].sum().reset_index()
 
 fig2 = px.pie(
-    round_funding,
+    round_df,
     names="round",
     values="funding_amount_numeric",
-    hole=0.4
+    color_discrete_sequence=px.colors.qualitative.Pastel
 )
 
 st.plotly_chart(fig2, use_container_width=True)
 
-# ---------- LINE CHART ----------
-st.subheader("📈 Quarter-wise Funding Trend")
+# ---------- LINE ----------
+st.subheader("📈 Quarter-wise Trend")
 
-quarter_data = df.groupby("quarter")["funding_amount_numeric"].sum().reset_index()
+q_df = df.groupby("quarter")["funding_amount_numeric"].sum().reset_index()
 
 fig3 = px.line(
-    quarter_data,
+    q_df,
     x="quarter",
     y="funding_amount_numeric",
     markers=True
 )
 
+fig3.update_layout(
+    xaxis_title="Quarter",
+    yaxis_title="Funding ($M)"
+)
+
 st.plotly_chart(fig3, use_container_width=True)
 
-# ---------- INVESTOR CHART ----------
-st.subheader("💼 Investor Count")
+# ---------- INVESTORS ----------
+st.subheader("💼 Investor Distribution")
 
-investor_count = df["investors"].fillna("Unknown").value_counts().reset_index()
-investor_count.columns = ["investor", "count"]
+inv_df = df["investors"].fillna("Unknown").value_counts().reset_index()
+inv_df.columns = ["investor", "count"]
 
 fig4 = px.bar(
-    investor_count.head(10),
+    inv_df.head(10),
     x="investor",
     y="count",
     text="count",
     color="count",
-    color_continuous_scale="Oranges"
+    color_continuous_scale="Peach"
 )
 
-fig4.update_traces(textposition='outside')
+fig4.update_traces(textposition="outside")
+
 st.plotly_chart(fig4, use_container_width=True)
 
-# ---------- OUTLIER DETECTION ----------
-st.subheader("🔥 Outlier Detection")
+# ---------- OUTLIERS ----------
+st.subheader("🔥 Outliers Detection")
 
 mean = df["funding_amount_numeric"].mean()
 std = df["funding_amount_numeric"].std()
 
 df["outlier"] = df["funding_amount_numeric"].apply(
-    lambda x: "Outlier 🔥" if abs(x - mean) > 2 * std else "Normal"
+    lambda x: "Outlier 🔥" if abs(x - mean) > 2*std else "Normal"
 )
 
 fig5 = px.scatter(
@@ -143,11 +156,29 @@ fig5 = px.scatter(
     x="startup_name",
     y="funding_amount_numeric",
     color="outlier",
-    size="funding_amount_numeric"
+    size="funding_amount_numeric",
+    color_discrete_map={
+        "Outlier 🔥": "#FF6B6B",
+        "Normal": "#4ECDC4"
+    }
+)
+
+fig5.update_layout(
+    xaxis_title="Startup",
+    yaxis_title="Funding ($M)"
 )
 
 st.plotly_chart(fig5, use_container_width=True)
 
-# ---------- FULL DATA ----------
-st.subheader("📄 Full Data")
-st.dataframe(df)
+# ---------- TABLE HIGHLIGHT ----------
+st.subheader("📄 Data Table (Highlighted)")
+
+def highlight(row):
+    if row["category"] == "Top 🚀":
+        return ["background-color: #C7F9CC"] * len(row)
+    elif row["category"] == "Low ⚠️":
+        return ["background-color: #FFCCD5"] * len(row)
+    else:
+        return [""] * len(row)
+
+st.dataframe(df.style.apply(highlight, axis=1))
