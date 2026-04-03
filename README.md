@@ -1,0 +1,1 @@
+This project builds an end-to-end AI-powered data pipeline that extracts, processes, and analyzes data from multiple web sources. Using the TinyFish API, the pipeline automates tasks such as web scraping, summarization, and trend detection, transforming unstructured data into meaningful insights.
